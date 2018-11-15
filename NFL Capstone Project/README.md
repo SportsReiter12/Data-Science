@@ -66,13 +66,13 @@ The other top plots include:
  
  When it came to predictive modeling, I started with a Logistic Regression model split between road and home teams since teams either win or lose. I used the standard train-test split as well as GridSearchCV to help with any overfitting issues. Afterwards, I fit the training data and predicted on the testing data with some very accurate scores.
  
- **The Road Team model was around 96% accurate while the Home Team model was about 91% accurate.** When it came to feature importance, the more impactful ones included scoring plays and turnovers while yards and time of possession were near the bottom.
+ **The Road Team model was around 96% accurate while the Home Team model was about 91% accurate. When it came to feature importance, the more impactful ones included scoring plays and turnovers while yards and time of possession were near the bottom.**
  
  However, both models had high log losses. Because of this, I also made another model of each using Random Forests.
  
- **For that, the Road Team model was about 92% accurate with the Home Team model being around 86% accurate.** Once again, the model for the away team was stronger but both were weaker than Logistic Regression.
+ **For that, the Road Team model was about 92% accurate with the Home Team model being around 86% accurate. Once again, the model for the away team was stronger but both were weaker than Logistic Regression.**
  
- Feature importance was a little different here as statistics like kickoffs, rushing attempts and time of possession were high while infrequent scoring plays and actions on special teams were low.
+ **Feature importance was a little different here as statistics like kickoffs, rushing attempts and time of possession were high while infrequent scoring plays and actions on special teams were low.**
  
  Yet again, the log losses were high meaning you would be punished for being confident and wrong. However, the point of this project was more about accuracy and that is what these models succeed in. If one inputs all the stats from a game, they can tell you whether a team won or not.
  
