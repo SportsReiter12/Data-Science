@@ -27,7 +27,7 @@ Luckily this API had most statistics I wanted so I could easily extract what I w
 
 Overall, there was not much missing data or at least any that needed cleaning. Events that did not occur usually received a zero and are still important for this project because they help illustrate importance.
 
-My Data Wrangling Code is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Wrangling/NFL%20Capstone%20Project%20Data%20Wrangling.ipynb) and the Data Wrangling Report is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Wrangling/NFL%20Capstone%20Data%20Wrangling%20Report.pdf).
+My code is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Wrangling/NFL%20Capstone%20Project%20Data%20Wrangling.ipynb) and the Data Wrangling Report is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Wrangling/NFL%20Capstone%20Data%20Wrangling%20Report.pdf).
 
 ## Data Story
 
