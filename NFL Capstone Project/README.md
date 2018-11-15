@@ -33,11 +33,11 @@ My Data Wrangling Code is [here](https://github.com/SportsReiter12/Data-Science/
 
 While there were many interesting plots from this data, I decided to focus on some of the most profound ones. For instance, Road Passing Attempts vs. Home Win was very surprising as this actually helped the opposing team win.
 
-![Road Passing Atts vs Home Win](/Users/dwreiter/Desktop/Work/Springboard/NFL Capstone Project/Data Storytelling/Road Passing Atts vs Home Win.png)
+![alt text](/Users/dwreiter/Desktop/Work/Springboard/NFL Capstone Project/Data Storytelling/Road Passing Atts vs Home Win.png)
 
 Another interesting visualization is how much of an increase win percentage there was in Home INT TDs vs. Home Win.
 
-![Home INT TDs vs Home Win](/Users/dwreiter/Desktop/Work/Springboard/NFL Capstone Project/Data Storytelling/Home INT TDs vs Home Win.png)
+![alt text](/Users/dwreiter/Desktop/Work/Springboard/NFL Capstone Project/Data Storytelling/Home INT TDs vs Home Win.png)
 
 The other top plots include:
    - Road Rushing Attempts vs. Road Win
