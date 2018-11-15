@@ -17,11 +17,11 @@ Packages used include: numpy, pandas, stattleship, itertools, matplotlib, seabor
 After installing stattlepy on my system, I was able to query NFL statistics with filters like season, team, game and player. One of the issues, however, was that the API limits how many results you receive so I could not just query a full season normally.
 
 Instead I worked on multiple ways to create the queries I wanted and looped through them. These methods include:
-  - A function to change game names to game slugs
-  - A For Loop that creates each combination of season and team
-  - List comprehension to get the name for each game
-  - A function that gets the names of the winning, losing and possibly tying teams
-  - A For Loop that takes all of these to get statistics from each game
+  - A function to change game names to game slugs.
+  - A For Loop that creates each combination of season and team.
+  - List comprehension to get the name for each game.
+  - A function that gets the names of the winning, losing and possibly tying teams.
+  - A For Loop that takes all of these to get statistics from each game.
   
 Luckily this API had most statistics I wanted so I could easily extract what I wanted from each query. The important distinction is whether the team is away or home. 
 
@@ -55,10 +55,11 @@ The other top plots include:
  
  Using the plots from above as well as other popular statistics, I ran some t-tests, chi-squared tests and Pearson correlation tests to see how significant these stats were towards winning.
  
- Some of the most interesting ones include:
-   - Rushing Yards and Total Yards (for either team) are statistically significant.
-   - Passing Yards (for either team) is **not** statistically significant.
-   - The relationship between Road and Home INTs Given Up is statistically significant
+ Some of the most interesting results include:
+   - Except for Road Passing First Downs vs. Road Win, the above plots showed consistent statistical significance.
+   - For both teams, Rushing Yards and Total Yards are statistically significant while Passing Yards is **not** statistically significant.
+   - Both the relationships between Road and Home Total Yards as well as Points are not statistically significant.
+   - The relationship between Road and Home INTs Given Up is statistically significant.
    
  To see all of the tests I ran, the code is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Inferential%20Statistics/NFL%20Capstone%20EDA%20-%20Inferential%20Statistics.ipynb) and the Inferential Statistical Analysis is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Inferential%20Statistics/NFL%20Capstone%20Inferential%20Statistical%20Analysis.pdf).
  
@@ -83,9 +84,9 @@ The other top plots include:
  What became apparent throughout this project is how unimportant passing yards are in the NFL. Although the NFL is more seen as a passing league, statistically it does not help you. And as seen in many of the above analyses, there is a mix of what plays really impact a team's chance of wining.
  
  That said, there are ways this project can be furthered including:
-  - Being more team-specific because of personnel
-  - Using more seasons (I did have an issue with the expect number of games I received from the API)
-  - More situational decisions instead of a general view
-  - Find more statistics to utilize
+  - Being more team-specific because of personnel.
+  - Using more seasons (I did have an issue with the expect number of games I received from the API).
+  - More situational decisions instead of a general view.
+  - Find more statistics to utilize,
   
 With all that said, this project gained some major insight about what really helps a team win in the NFL and I hope you enjoy seeing my rendition of NFL Sabermetrics.
