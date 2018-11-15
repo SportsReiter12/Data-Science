@@ -58,7 +58,7 @@ The other top plots include:
  Some of the most interesting results include:
    - Except for Road Passing First Downs vs. Road Win, the above plots showed consistent statistical significance.
    - For both teams, Rushing Yards and Total Yards are statistically significant while Passing Yards is **not** statistically significant.
-   - Both the relationships between Road and Home Total Yards as well as Points are not statistically significant.
+   - Both the relationships between Road and Home Total Yards as well as Points are **not** statistically significant.
    - The relationship between Road and Home INTs Given Up is statistically significant.
    
  To see all of the tests I ran, the code is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Inferential%20Statistics/NFL%20Capstone%20EDA%20-%20Inferential%20Statistics.ipynb) and the Inferential Statistical Analysis is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Inferential%20Statistics/NFL%20Capstone%20Inferential%20Statistical%20Analysis.pdf).
