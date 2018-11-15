@@ -1,14 +1,14 @@
 # NFL Sabermetrics
 
-This holds all of my work for my first Springboard Capstone Project, *NFL Sabermetrics*. In here you can find all of my code, reports and presentation. The source of my data is the [Stattleship API] (https://www.stattleship.com/), which contains detailed statistics for all of the major American sports including the NFL.
+This holds all of my work for my first Springboard Capstone Project, *NFL Sabermetrics*. In here you can find all of my code, reports and presentation. The source of my data is the [Stattleship API](https://www.stattleship.com/), which contains detailed statistics for all of the major American sports including the NFL.
 
 The purpose of this project is to find what statistics best help an NFL team win. I look through three seasons of the NFL, from 2015 - 2018, and go game-by-game to get the statistics for each team. My goal is to see the trends and patterns that best help an NFL team's chance of winning, how coaches may want to approach the sport as well as create a predictive model.
 
-My Project Proposal is [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/NFL%20Capstone%20Project%20Proposal.pdf).
+My Project Proposal is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/NFL%20Capstone%20Project%20Proposal.pdf).
 
-My Final Report is [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/NFL%20Capstone%20Final%20Report.pdf).
+My Final Report is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/NFL%20Capstone%20Final%20Report.pdf).
 
-My Presentation is [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/NFL%20Capstone%20Presentation.pptx).
+My Presentation is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/NFL%20Capstone%20Presentation.pptx).
 
 Packages used include: numpy, pandas, stattleship, itertools, matplotlib, seaborn, scipy, scikit-learn.
 
@@ -27,17 +27,17 @@ Luckily this API had most statistics I wanted so I could easily extract what I w
 
 Overall, there was not much missing data or at least any that needed cleaning. Events that did not occur usually received a zero and are still important for this project because they help illustrate importance.
 
-My Data Wrangling Code is [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Wrangling/NFL%20Capstone%20Project%20Data%20Wrangling.ipynb) and the Data Wrangling Report is [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Wrangling/NFL%20Capstone%20Data%20Wrangling%20Report.pdf).
+My Data Wrangling Code is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Wrangling/NFL%20Capstone%20Project%20Data%20Wrangling.ipynb) and the Data Wrangling Report is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Wrangling/NFL%20Capstone%20Data%20Wrangling%20Report.pdf).
 
 ## Data Story
 
 While there were many interesting plots from this data, I decided to focus on some of the most profound ones. For instance, Road Passing Attempts vs. Home Win was very surprising as this actually helped the opposing team win.
 
-!(/Users/dwreiter/Desktop/Work/Springboard/NFL Capstone Project/Data Storytelling/Road Passing Atts vs Home Win.png)
+![Road Passing Atts vs Home Win](/Users/dwreiter/Desktop/Work/Springboard/NFL Capstone Project/Data Storytelling/Road Passing Atts vs Home Win.png)
 
 Another interesting visualization is how much of an increase win percentage there was in Home INT TDs vs. Home Win.
 
-!(/Users/dwreiter/Desktop/Work/Springboard/NFL Capstone Project/Data Storytelling/Home INT TDs vs Home Win.png)
+![Home INT TDs vs Home Win](/Users/dwreiter/Desktop/Work/Springboard/NFL Capstone Project/Data Storytelling/Home INT TDs vs Home Win.png)
 
 The other top plots include:
    - Road Rushing Attempts vs. Road Win
@@ -47,9 +47,9 @@ The other top plots include:
    - Home Goal To Go Successes vs. Home Win
    - Road Fourth Down Successes vs. Home Win
    
- The Data Story is [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Storytelling/NFL%20Capstone%20Data%20Story.ipynb).
+ The Data Story is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Storytelling/NFL%20Capstone%20Data%20Story.ipynb).
  
- And if you are wondering how some of the above statistics impact the opposite team or any other statistic that I obtained while wrangling the data, click [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Storytelling/NFL%20Capstone%20EDA%20-%20Plots.ipynb).
+ And if you are wondering how some of the above statistics impact the opposite team or any other statistic that I obtained while wrangling the data, click [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Data%20Storytelling/NFL%20Capstone%20EDA%20-%20Plots.ipynb).
  
  ## Inferential Statistical Analysis
  
@@ -60,7 +60,7 @@ The other top plots include:
    - Passing Yards (for either team) is **not** statistically significant.
    - The relationship between Road and Home INTs Given Up is statistically significant
    
- To see all of the tests I ran, the code is [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Inferential%20Statistics/NFL%20Capstone%20EDA%20-%20Inferential%20Statistics.ipynb) and the Inferential Statistical Analysis is [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Inferential%20Statistics/NFL%20Capstone%20Inferential%20Statistical%20Analysis.pdf).
+ To see all of the tests I ran, the code is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Inferential%20Statistics/NFL%20Capstone%20EDA%20-%20Inferential%20Statistics.ipynb) and the Inferential Statistical Analysis is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Inferential%20Statistics/NFL%20Capstone%20Inferential%20Statistical%20Analysis.pdf).
  
  ## Machine Learning
  
@@ -76,7 +76,7 @@ The other top plots include:
  
  Yet again, the log losses were high meaning you would be punished for being confident and wrong. However, the point of this project was more about accuracy and that is what these models succeed in. If one inputs all the stats from a game, they can tell you whether a team won or not.
  
- The code is [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Machine%20Learning/NFL%20Capstone%20Machine%20Learning.ipynb) and the Machine Learning Analysis is [here] (https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Machine%20Learning/NFL%20Capstone%20Machine%20Learning%20Analysis.pdf).
+ The code is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Machine%20Learning/NFL%20Capstone%20Machine%20Learning.ipynb) and the Machine Learning Analysis is [here](https://github.com/SportsReiter12/Data-Science/blob/master/NFL%20Capstone%20Project/Machine%20Learning/NFL%20Capstone%20Machine%20Learning%20Analysis.pdf).
  
  ## Conclusion
  
