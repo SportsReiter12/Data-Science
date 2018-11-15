@@ -56,7 +56,7 @@ The other top plots include:
  Using the plots from above as well as other popular statistics, I ran some t-tests, chi-squared tests and Pearson correlation tests to see how significant these stats were towards winning.
  
  Some of the most interesting ones include:
-   - Rushing Yards and Total Yards (for either team) is statistically significant.
+   - Rushing Yards and Total Yards (for either team) are statistically significant.
    - Passing Yards (for either team) is **not** statistically significant.
    - The relationship between Road and Home INTs Given Up is statistically significant
    
