@@ -16,7 +16,7 @@ Packages used include: numpy, pandas, stattleship, itertools, matplotlib, seabor
 
 After installing stattlepy on my system, I was able to query NFL statistics with filters like season, team, game and player. One of the issues, however, was that the API limits how many results you receive so I could not just query a full season normally.
 
-Instead I worked on multiple ways to create the queries I wanted and looped through them. These methods include:
+Instead I worked on multiple ways to create the queries I wanted and looped through them. These methods included:
   - A function to change game names to game slugs.
   - A For Loop that creates each combination of season and team.
   - List comprehension to get the name for each game.
@@ -81,12 +81,12 @@ The other top plots include:
  
  ## Conclusion
  
- What became apparent throughout this project is how unimportant passing yards are in the NFL. Although the NFL is more seen as a passing league, statistically it does not help you. And as seen in many of the above analyses, there is a mix of what plays really impact a team's chance of wining.
+ This may just be a snippet of my entire project but what became apparent throughout this endeavor is how unimportant passing yards are in the NFL. Although the NFL is more seen as a passing league, statistically it does not help you. And as seen in many of the above analyses, there is a mix of what plays really impact a team's chance of wining.
  
  That said, there are ways this project can be furthered including:
   - Being more team-specific because of personnel.
   - Using more seasons (I did have an issue with the expect number of games I received from the API).
   - More situational decisions instead of a general view.
-  - Find more statistics to utilize,
+  - Find more statistics to utilize.
   
 With all that said, this project gained some major insight about what really helps a team win in the NFL and I hope you enjoy seeing my rendition of NFL Sabermetrics.
