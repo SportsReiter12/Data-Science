@@ -67,13 +67,37 @@ The other top plots include:
  
  When it came to predictive modeling, I started with a Logistic Regression model split between road and home teams since teams either win or lose. I used the standard train-test split as well as GridSearchCV to help with any overfitting issues. Afterwards, I fit the training data and predicted on the testing data with some very accurate scores.
  
- **The Road Team model was around 96% accurate while the Home Team model was about 91% accurate. When it came to feature importance, the more impactful ones included scoring plays and turnovers while yards and time of possession were near the bottom.**
+ The Road Team model was around 96% accurate with similar precision and recall.
+ 
+ ![rw metrics](https://user-images.githubusercontent.com/37318222/48793712-afa29d00-ecac-11e8-851c-90e7bb1c952a.png)
+ 
+ On the other hand, the Home Team model was about 91% accurate. While not quite as high as its counterpart, it is still a very accurate model.
+ 
+![hw metrics](https://user-images.githubusercontent.com/37318222/48793686-9bf73680-ecac-11e8-98a1-4f7546341482.png)
+ 
+ When it came to feature importance, the more impactful ones included scoring plays and turnovers while yards and time of possession were less important. As you can see in the Home Win plot below, the points at the bottom have the biggest impact (either positive or negative) with the higher points having less impact as the line straightens out.
+ 
+ ![hw feature importance](https://user-images.githubusercontent.com/37318222/48793795-f6909280-ecac-11e8-977b-94ac3ae3dbe8.png)
+ 
+ This helps explain some of the mislabeled data in the models as games with more touchdowns or made field goals led to errors.
+ 
+ ![hw mislabeled](https://user-images.githubusercontent.com/37318222/48793900-42dbd280-ecad-11e8-89b9-367b7039a1d8.png)
  
  However, both models had high log losses. Because of this, I also made another model of each using Random Forests.
  
- **For that, the Road Team model was about 92% accurate with the Home Team model being around 86% accurate. Once again, the model for the away team was stronger but both were weaker than Logistic Regression.**
+ For that, the Road Team model was about 92% accurate with the Home Team model being around 86% accurate. Once again, the model for the away team was stronger but both were weaker than Logistic Regression.
  
- **Feature importance was a little different here as statistics like kickoffs, rushing attempts and time of possession were high while infrequent scoring plays and actions on special teams were low.**
+ ![rw_rf metrics](https://user-images.githubusercontent.com/37318222/48793826-0e681680-ecad-11e8-8ab3-bd7592e7bf94.png)
+ 
+ ![hw_rf metrics](https://user-images.githubusercontent.com/37318222/48793836-17f17e80-ecad-11e8-8e22-0fa163876b61.png)
+ 
+ Feature importance was a little different here as statistics like kickoffs, rushing attempts and time of possession were high while infrequent scoring plays and actions on special teams were low. Similar to the previous example, the Road Team plot displays the statistics with the biggest impact at the bottom-right and smallest impact at the top-left as the line curves more inward.
+ 
+ ![rw_rf feature importance](https://user-images.githubusercontent.com/37318222/48793923-538c4880-ecad-11e8-8818-bb9157aec8b6.png)
+ 
+ Because of this, the mislabeled data makes sense as games with higher kickoffs or rushing attempts for the losing team led to the incorrect label.
+ 
+ ![rw_rf mislabeled](https://user-images.githubusercontent.com/37318222/48794186-0fe60e80-ecae-11e8-9137-da1a7f240e84.png)
  
  Yet again, the log losses were high meaning you would be punished for being confident and wrong. However, the point of this project was more about accuracy and that is what these models succeed in. If one inputs all the stats from a game, they can tell you whether a team won or not.
  
