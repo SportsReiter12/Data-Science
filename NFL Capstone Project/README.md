@@ -73,7 +73,7 @@ The other top plots include:
  
  On the other hand, the Home Team model was about 91% accurate. While not quite as high as its counterpart, it is still a very accurate model.
  
-![hw metrics](https://user-images.githubusercontent.com/37318222/48793686-9bf73680-ecac-11e8-98a1-4f7546341482.png)
+![hw metrics](https://user-images.githubusercontent.com/37318222/49129347-3e528380-f284-11e8-93c4-d95c29128989.png)
  
  When it came to feature importance, the more impactful ones included scoring plays and turnovers while yards and time of possession were less important. As you can see in the Home Win plot below, the points at the bottom have the biggest impact (either positive or negative) with the higher points having less impact as the line straightens out.
  
