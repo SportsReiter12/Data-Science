@@ -70,10 +70,12 @@ The other top plots include:
  The Road Team model was around 96% accurate with similar precision and recall.
  
  ![rw metrics](https://user-images.githubusercontent.com/37318222/48793712-afa29d00-ecac-11e8-851c-90e7bb1c952a.png)
+ ![rw confusion matrix plot](https://user-images.githubusercontent.com/37318222/49163751-a9cb3e00-f2e2-11e8-93d7-b794d4997a04.png)
  
  On the other hand, the Home Team model was about 91% accurate. While not quite as high as its counterpart, it is still a very accurate model.
  
 ![hw metrics](https://user-images.githubusercontent.com/37318222/49129347-3e528380-f284-11e8-93c4-d95c29128989.png)
+![hw confusion matrix plot](https://user-images.githubusercontent.com/37318222/49163774-b64f9680-f2e2-11e8-88f8-990826ded047.png)
  
  When it came to feature importance, the more impactful ones included scoring plays and turnovers while yards and time of possession were less important. As you can see in the Home Win plot below, the points at the bottom have the biggest impact (either positive or negative) with the higher points having less impact as the line straightens out.
  
@@ -88,8 +90,10 @@ The other top plots include:
  For that, the Road Team model was about 92% accurate with the Home Team model being around 86% accurate. Once again, the model for the away team was stronger but both were weaker than Logistic Regression.
  
  ![rw_rf metrics](https://user-images.githubusercontent.com/37318222/48793826-0e681680-ecad-11e8-8ab3-bd7592e7bf94.png)
+ ![rw_rf confusion matrix plot](https://user-images.githubusercontent.com/37318222/49163805-c4051c00-f2e2-11e8-882f-83043a05a1a1.png)
  
  ![hw_rf metrics](https://user-images.githubusercontent.com/37318222/48793836-17f17e80-ecad-11e8-8e22-0fa163876b61.png)
+ ![hw_rf confusion matrix plot](https://user-images.githubusercontent.com/37318222/49163825-ce271a80-f2e2-11e8-90c1-9875e301fe22.png)
  
  Feature importance was a little different here as statistics like kickoffs, rushing attempts and time of possession were high while infrequent scoring plays and actions on special teams were low. Similar to the previous example, the Road Team plot displays the statistics with the biggest impact at the bottom-right and smallest impact at the top-left as the line curves more inward.
  
