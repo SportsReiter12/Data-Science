@@ -67,19 +67,23 @@ The other top plots include:
  
  When it came to predictive modeling, I started with a Logistic Regression model split between road and home teams since teams either win or lose. I used the standard train-test split as well as GridSearchCV to help with any overfitting issues. Afterwards, I fit the training data and predicted on the testing data with some very accurate scores.
  
- The Road Team model was around 96% accurate with similar precision and recall.
+ The Road Team model was around 96% accurate with similar precision and recall as well as AUC score.
+ 
+ ![rw_auc](https://user-images.githubusercontent.com/37318222/49264198-2e60ae00-f402-11e8-9fcb-f8b7d7edabc4.png)
  
  ![rw metrics](https://user-images.githubusercontent.com/37318222/48793712-afa29d00-ecac-11e8-851c-90e7bb1c952a.png)
  ![rw confusion matrix plot](https://user-images.githubusercontent.com/37318222/49199352-36f6ad00-f34c-11e8-9681-565af7babcbc.png)
  
  On the other hand, the Home Team model was about 91% accurate. While not quite as high as its counterpart, it is still a very accurate model.
  
+![hw_auc](https://user-images.githubusercontent.com/37318222/49264208-37ea1600-f402-11e8-8ca2-fcb85d09b4b5.png)
+
 ![hw metrics](https://user-images.githubusercontent.com/37318222/49129347-3e528380-f284-11e8-93c4-d95c29128989.png)
 ![hw confusion matrix plot](https://user-images.githubusercontent.com/37318222/49199361-41b14200-f34c-11e8-8961-c8e88edff12b.png)
  
  When it came to feature importance, the more impactful ones included scoring plays and turnovers while yards and time of possession were less important. As you can see in the Home Win plot below, the points at the bottom have the biggest impact (either positive or negative) with the higher points having less impact as the line straightens out.
  
- ![hw feature importance](https://user-images.githubusercontent.com/37318222/48793795-f6909280-ecac-11e8-977b-94ac3ae3dbe8.png)
+ ![gh hw feature importance](https://user-images.githubusercontent.com/37318222/49265009-5d2c5380-f405-11e8-8b08-2e85a1e3ce25.png)
  
  This helps explain some of the mislabeled data in the models as games with more touchdowns or made field goals led to errors.
  
@@ -89,15 +93,19 @@ The other top plots include:
  
  For that, the Road Team model was about 92% accurate with the Home Team model being around 86% accurate. Once again, the model for the away team was stronger but both were weaker than Logistic Regression.
  
- ![rw_rf metrics](https://user-images.githubusercontent.com/37318222/48793826-0e681680-ecad-11e8-8ab3-bd7592e7bf94.png)
- ![rw_rf confusion matrix plot](https://user-images.githubusercontent.com/37318222/49199369-4bd34080-f34c-11e8-8a29-e3b1a98ee6d1.png)
+ ![rw_rf_auc](https://user-images.githubusercontent.com/37318222/49264218-433d4180-f402-11e8-8884-8abd429d1c1f.png)
+ 
+ ![rw_rf metrics](https://user-images.githubusercontent.com/37318222/49264503-63b9cb80-f403-11e8-9327-d7b1d0b03727.png)
+ ![rw_rf confusion matrix plot](https://user-images.githubusercontent.com/37318222/49264514-6d433380-f403-11e8-97c1-69ab74c05a2e.png)
+
+ ![hw_rf_auc](https://user-images.githubusercontent.com/37318222/49264227-4f290380-f402-11e8-83df-eef1024e9c9c.png)
  
  ![hw_rf metrics](https://user-images.githubusercontent.com/37318222/48793836-17f17e80-ecad-11e8-8e22-0fa163876b61.png)
  ![hw_rf confusion matrix plot](https://user-images.githubusercontent.com/37318222/49199375-58f02f80-f34c-11e8-9c26-615f2a046e57.png)
  
  Feature importance was a little different here as statistics like kickoffs, rushing attempts and time of possession were high while infrequent scoring plays and actions on special teams were low. Similar to the previous example, the Road Team plot displays the statistics with the biggest impact at the bottom-right and smallest impact at the top-left as the line curves more inward.
  
- ![rw_rf feature importance](https://user-images.githubusercontent.com/37318222/48793923-538c4880-ecad-11e8-8818-bb9157aec8b6.png)
+ ![gh rw_rf feature importance](https://user-images.githubusercontent.com/37318222/49265016-67e6e880-f405-11e8-8822-605238377611.png)
  
  Because of this, the mislabeled data makes sense as games with higher kickoffs or rushing attempts for the losing team led to the incorrect label.
  
