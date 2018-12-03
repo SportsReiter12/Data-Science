@@ -87,7 +87,7 @@ The other top plots include:
  
  This helps explain some of the mislabeled data in the models as games with more touchdowns or made field goals led to errors.
  
- ![hw mislabeled](https://user-images.githubusercontent.com/37318222/48793900-42dbd280-ecad-11e8-89b9-367b7039a1d8.png)
+ ![hw mislabeled data important stats](https://user-images.githubusercontent.com/37318222/49350723-f86f3400-f664-11e8-9d6a-72b081f5129e.png)
  
  However, both models had high log losses. Because of this, I also made another model of each using Random Forests.
  
@@ -107,9 +107,9 @@ The other top plots include:
  
  ![gh rw_rf feature importance](https://user-images.githubusercontent.com/37318222/49265016-67e6e880-f405-11e8-8822-605238377611.png)
  
- Because of this, the mislabeled data makes sense as games with higher kickoffs or rushing attempts for the losing team led to the incorrect label.
+ Because of this, the mislabeled data makes sense as games with higher rushing attempts or kickoffs led to the incorrect label.
  
- ![rw_rf mislabeled](https://user-images.githubusercontent.com/37318222/48794186-0fe60e80-ecae-11e8-9137-da1a7f240e84.png)
+ ![rw_rf mislabeled data important stats](https://user-images.githubusercontent.com/37318222/49350748-0e7cf480-f665-11e8-8d04-c3b8d128deea.png)
  
  Yet again, the log losses were high meaning you would be punished for being confident and wrong. However, the point of this project was more about accuracy and that is what these models succeed in. If one inputs all the stats from a game, they can tell you whether a team won or not.
  
