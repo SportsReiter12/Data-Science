@@ -70,3 +70,70 @@ Some of the most interesting results include:
    - All regions had positive relationships with Critic and User Scores but were weak.
    
 To see all of the tests I ran, the code is [here](https://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Inferential%20Statistics/Video%20Game%20Capstone%20EDA%20-%20Inferential%20Statistics.ipynb) and the Inferential Statistical Analysis is [here](https://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Inferential%20Statistics/Video%20Game%20Capstone%20Inferential%20Statistical%20Analysis.pdf).
+
+## Machine Learning
+
+After trying out multiple different models, I decided to stick with Random Forest because it had the best results for each of the major types of sales. For preprocessing, I split each type into Training and Testing sets as well as used GridSearchCV. Also, sometimes extra parameters were used to help improve R^2 and the Root Mean Squared Error (but not by too much). Lastly, other than just using the model on overall sales, I also tried the model on the major types of sales for values greater than or equal to their median.
+
+For Global Sales, R^2 was around 0.43 with an RMSE close to 2.72. As seen below, there was a fair amount of difference between Test and Prediction.
+
+<img src="https://user-images.githubusercontent.com/37318222/54468465-f92a6280-4749-11e9-946a-cb5bc4e72258.png" height="700" width="780">
+
+This slope was essentially the same for all of the overall types of sales.
+
+When filtered by the median, R^2 improved to about 0.45 while the RMSE raised to around 2.85. However, this model shows more of a slope when it comes to the difference between Test and Prediction.
+
+<img src="https://user-images.githubusercontent.com/37318222/54468721-d0f03300-474c-11e9-98ad-42b5494cfb58.png" height="700" width="780">
+
+The model for North American Sales was similar with R^2 around 0.43 and a Root Mean Squared Error at about 1.33. When it came to important features, this model was very similar to that of Global Sales.
+
+<img src="https://user-images.githubusercontent.com/37318222/54468760-6a1f4980-474d-11e9-9fef-f1951a83b4d7.png" height="700" width="780">
+
+While I do not know how the features impact the model (positively or negatively), the ones that stand out the most include Critic Score, Critic Count and User Count as well as the words "mw," "super" and "mario."
+
+After being filtered by the median, the model for North American Sales did far worse with R^2 close to 0.16 and RMSE around 1.51. The Relative Error plot below gives a clearer picture of how far off Test and Prediction could be.
+
+<img src="https://user-images.githubusercontent.com/37318222/54468849-2416b580-474e-11e9-9e9d-24949604e747.png" height="700" width="780">
+
+So what feature makes such a big difference? It is the extreme values in User Count.
+
+<img src="https://user-images.githubusercontent.com/37318222/54468890-735ce600-474e-11e9-9df8-2e40b1c9c62e.png" height="700" width="780">
+
+Having games with such massive differences in User Count was a consistent issue for most of these models when it came to Test vs. Prediction.
+
+For European Sales, R^2 was around 0.38 with an RMSE close to 0.93 and similar important features compared to the previous models.
+
+<img src="https://user-images.githubusercontent.com/37318222/54469119-23335300-4751-11e9-8444-f7f2a39c3c26.png" height="700" width="780">
+
+Once again, User Count was very important along with key words such as "fifa" and "mw." Words that are sticking out tend to be a name or acronym of a major video game franchise. After filtering European Sales by the median, R^2 and the RMSE minimally changed to about 0.33 and 0.85 respectively.
+
+To wrap up this dataset, Japanese Sales actually had the same results when run through a Random Forest, whether the model was used on overall sales or subsetted by the median. R^2 was close to 0.37 while the Root Mean Squared Error was around 0.46. To make this region even more unique, the most important features included more of the companies that made the games.
+
+<img src="https://user-images.githubusercontent.com/37318222/54469182-0b100380-4752-11e9-9965-2ac4c95f3121.png" height="700" width="780">
+
+In Japan, publishers as well as developers like Nintendo and SquareSoft have a major impact on video game sales.
+
+While R^2 and the RMSE tended to get lower for each type of sale, the data from University of Portsmouth led to a strong Random Forest model as R^2 was about 0.86 and the Root Mean Squared Error was around 0.41 for overall U.S. Sales. When looking at the difference between Test and Prediction, there is a much steeper slope.
+
+<img src="https://user-images.githubusercontent.com/37318222/54469256-f08a5a00-4752-11e9-866b-e6daac8d73f1.png" height="700" width="780">
+
+Now this data did not include any natural language processing so some of the features were different. Yet, much like the other models, genre and platform were not that important.
+
+<img src="https://user-images.githubusercontent.com/37318222/54469278-39421300-4753-11e9-94ed-901155182d8e.png" height="700" width="780">
+
+Instead the most important features were the blocks of the year that games come out in with the holidays being the most critical. And those stayed important when filtered by the median (despite a few changes) as well as an R^2 around 0.92 and RMSE close to 0.42.
+
+With these different datasets, we get a clearer idea of what features truly have a big impact on video game sales when put through a predictive model.
+
+The code can be found [here](hhttps://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Machine%20Learning/Video%20Game%20Capstone%20Machine%20Learning.ipynb) while the Machine Learning Analysis can be found [here](https://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Machine%20Learning/Video%20Game%20Capstone%20Machine%20Learning%20Analysis.pdf).
+
+## Conclusion
+ 
+While there is plenty more to break down in this project, what stands out is how key factors like brand names, the amount of users who review games as well as when games are released become critical for video game sales. Despite rushed deadlines being seen as major contributors for disappointing games, there is a reason why companies want their biggest products coming out in the busy seasons.
+ 
+Yet, as informative as these results may be, there are a few ways to dig deeper:
+ - Include games for older consoles to help see the impact of retro games.
+ - Along with video games, include console sales as well.
+ - Utilize more reviews including the words used by critics.
+  
+To that end, I hope you enjoy the layered narrative of video game sales and truly understand why The Name is the Game.
