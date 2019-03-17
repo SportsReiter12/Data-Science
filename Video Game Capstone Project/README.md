@@ -75,15 +75,15 @@ To see all of the tests I ran, the code is [here](https://github.com/SportsReite
 
 After trying out multiple different models, I decided to stick with Random Forest because it had the best results for each of the major types of sales. For preprocessing, I split each type into Training and Testing sets as well as used GridSearchCV. Also, sometimes extra parameters were used to help improve R^2 and the Root Mean Squared Error (but not by too much). Lastly, other than just using the model on overall sales, I also tried the model on the major types of sales for values greater than or equal to their median.
 
-For Global Sales, R^2 was around 0.43 with an RMSE close to 2.72. As seen below, there was a fair amount of difference between Test and Prediction.
+For Global Sales, R^2 was around 0.43 with an RMSE close to 2.72. As seen below, there was a fair amount of difference between the true and predicted data.
 
-<img src="https://user-images.githubusercontent.com/37318222/54468465-f92a6280-4749-11e9-946a-cb5bc4e72258.png" height="700" width="780">
+<img src="https://user-images.githubusercontent.com/37318222/54483925-36a9f100-4819-11e9-92ce-7b6de55c9dfd.png" height="700" width="780">
 
 This slope was essentially the same for all of the overall types of sales.
 
-When filtered by the median, R^2 improved to about 0.45 while the RMSE raised to around 2.85. However, this model shows more of a slope when it comes to the difference between Test and Prediction.
+When filtered by the median, R^2 improved to about 0.45 while the RMSE raised to around 2.85. However, this model shows more of a slope when it comes to the difference between the true and predicted data.
 
-<img src="https://user-images.githubusercontent.com/37318222/54468721-d0f03300-474c-11e9-98ad-42b5494cfb58.png" height="700" width="780">
+<img src="https://user-images.githubusercontent.com/37318222/54483929-475a6700-4819-11e9-954c-3a6f8776dfc7.png" height="700" width="780">
 
 The model for North American Sales was similar with R^2 around 0.43 and a Root Mean Squared Error at about 1.33. When it came to important features, this model was very similar to that of Global Sales.
 
@@ -91,15 +91,15 @@ The model for North American Sales was similar with R^2 around 0.43 and a Root M
 
 While I do not know how the features impact the model (positively or negatively), the ones that stand out the most include Critic Score, Critic Count and User Count as well as the words "mw," "super" and "mario."
 
-After being filtered by the median, the model for North American Sales did far worse with R^2 close to 0.16 and RMSE around 1.51. The Relative Error plot below gives a clearer picture of how far off Test and Prediction could be.
+After being filtered by the median, the model for North American Sales did far worse with R^2 close to 0.16 and RMSE around 1.51. The Relative Error plot below gives a clearer picture of how far off the test and prediction data could be.
 
 <img src="https://user-images.githubusercontent.com/37318222/54468849-2416b580-474e-11e9-9e9d-24949604e747.png" height="700" width="780">
 
-So what feature makes such a big difference? It is the extreme values in User Count.
+So what feature makes such a big difference? It might be the extreme values in User Count.
 
 <img src="https://user-images.githubusercontent.com/37318222/54468890-735ce600-474e-11e9-9df8-2e40b1c9c62e.png" height="700" width="780">
 
-Having games with such massive differences in User Count was a consistent issue for most of these models when it came to Test vs. Prediction.
+Having games with such massive differences in User Count was a consistent issue for most of these models when it came to test vs. prediction.
 
 For European Sales, R^2 was around 0.38 with an RMSE close to 0.93 and similar important features compared to the previous models.
 
@@ -113,9 +113,9 @@ To wrap up this dataset, Japanese Sales actually had the same results when run t
 
 In Japan, publishers as well as developers like Nintendo and SquareSoft have a major impact on video game sales.
 
-While R^2 and the RMSE tended to get lower for each type of sale, the data from University of Portsmouth led to a strong Random Forest model as R^2 was about 0.86 and the Root Mean Squared Error was around 0.41 for overall U.S. Sales. When looking at the difference between Test and Prediction, there is a much steeper slope.
+While R^2 and the RMSE tended to get lower for each type of sale, the data from University of Portsmouth led to a strong Random Forest model as R^2 was about 0.86 and the Root Mean Squared Error was around 0.41 for overall U.S. Sales. When looking at the difference between the true and predicted data, there is a much steeper slope.
 
-<img src="https://user-images.githubusercontent.com/37318222/54469256-f08a5a00-4752-11e9-866b-e6daac8d73f1.png" height="700" width="780">
+<img src="https://user-images.githubusercontent.com/37318222/54483933-648f3580-4819-11e9-966f-cf8df5a4d624.png" height="700" width="780">
 
 Now this data did not include any natural language processing so some of the features were different. Yet, much like the other models, genre and platform were not that important.
 
@@ -125,7 +125,7 @@ Instead the most important features were the blocks of the year that games come 
 
 With these different datasets, we get a clearer idea of what features truly have a big impact on video game sales when put through a predictive model.
 
-The code can be found [here](hhttps://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Machine%20Learning/Video%20Game%20Capstone%20Machine%20Learning.ipynb) while the Machine Learning Analysis can be found [here](https://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Machine%20Learning/Video%20Game%20Capstone%20Machine%20Learning%20Analysis.pdf).
+The code can be found [here](https://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Machine%20Learning/Video%20Game%20Capstone%20Machine%20Learning.ipynb) while the Machine Learning Analysis can be found [here](https://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Machine%20Learning/Video%20Game%20Capstone%20Machine%20Learning%20Analysis.pdf).
 
 ## Conclusion
  
