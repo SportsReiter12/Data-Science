@@ -6,6 +6,10 @@ The purpose of this project is to find what types of video games sell best. I di
 
 My Project Proposal is [here](https://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Video%20Game%20Capstone%20Project%20Proposal.pdf).
 
+My Final Report is [here](https://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Video%20Game%20Capstone%20Final%20Report.pdf).
+
+My Presentation is [here](https://github.com/SportsReiter12/Data-Science/blob/master/Video%20Game%20Capstone%20Project/Video%20Game%20Capstone%20Presentation.pptx).
+
 Packages used include: numpy, pandas, re, nltk, langdetect, collections, matplotlib, seaborn, scipy, scikit-learn.
 
 ## Data Wrangling
